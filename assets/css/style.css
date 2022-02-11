@@ -13,12 +13,13 @@ body {
   height: 100%;
   min-height: 750px;
   background-color: #000;
+  overflow: hidden;
 }
 
 .bg-container {
   width: 100%;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   z-index: -2;
   opacity: 0.1;
 }
@@ -30,6 +31,16 @@ body {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+}
+
+.bg-container-mark {
+  position: absolute;
+  z-index: 2;
+  bottom: -15%;
+  left: -20%;
+  width: 100%;
+  -webkit-transform: rotate(12deg);
+          transform: rotate(12deg);
 }
 
 .header {
