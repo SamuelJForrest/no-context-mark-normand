@@ -86,6 +86,8 @@ body {
   position: absolute;
   top: 0;
   right: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .header .pause-btn-bar {
@@ -94,6 +96,11 @@ body {
   background: #ffffff;
   display: inline-block;
   margin: 0 5px;
+}
+
+.header .pause-btn:hover, .header .pause-btn:focus {
+  background: #bf1b1b;
+  cursor: pointer;
 }
 
 .btn {
@@ -120,11 +127,37 @@ body {
   font-weight: 100;
   position: relative;
   top: 20px;
+  font-family: "Roboto", sans-serif;
 }
 
 .btn:hover, .btn:focus {
   cursor: pointer;
   background: #bf1b1b;
+  color: #ffffff;
+}
+
+.credit {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  text-align: right;
+  padding: 20px;
+}
+
+.credit-text {
+  margin: 0;
+}
+
+.credit-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.credit-link:hover, .credit-link:focus {
+  text-decoration: underline;
   color: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */
