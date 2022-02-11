@@ -41,6 +41,7 @@ body {
   width: 100%;
   -webkit-transform: rotate(12deg);
           transform: rotate(12deg);
+  max-width: 1400px;
 }
 
 .header {
@@ -93,5 +94,37 @@ body {
   background: #ffffff;
   display: inline-block;
   margin: 0 5px;
+}
+
+.btn {
+  background: #e12c2c;
+  border-radius: 50%;
+  height: 455px;
+  width: 455px;
+  margin: 20px 0 0 50px;
+  color: #ffffff;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 5;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.btn-title {
+  font-size: 6.7rem;
+  font-family: "Rammetto One", cursive;
+}
+
+.btn-subtitle {
+  font-size: 1.75rem;
+  font-weight: 100;
+  position: relative;
+  top: 20px;
+}
+
+.btn:hover, .btn:focus {
+  cursor: pointer;
+  background: #bf1b1b;
+  color: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */
