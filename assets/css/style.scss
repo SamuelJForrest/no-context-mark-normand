@@ -34,12 +34,14 @@ body {
 
 .header {
   padding: 10px 5px;
+
   &-subtitle {
     font-family: $subtitle-font;
     font-size: 3rem;
     color: $color-yellow;
     position: relative;
     left: 3px;
+    top: -2px;
   }
 
   &-title {
@@ -61,6 +63,23 @@ body {
         color: $color-red;
         font-size: 9rem;
       }
+    }
+  }
+
+  .pause-btn {
+    height: 96px;
+    width: 96px;
+    background: $color-red;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    &-bar {
+      height: 50px;
+      width: 16px;
+      background: $color-white;
+      display: inline-block;
+      margin: 0 5px;
     }
   }
 }

@@ -42,6 +42,7 @@ body {
   color: #ffe100;
   position: relative;
   left: 3px;
+  top: -2px;
 }
 
 .header-title {
@@ -64,5 +65,22 @@ body {
   font-family: "Spicy Rice", cursive;
   color: #e12c2c;
   font-size: 9rem;
+}
+
+.header .pause-btn {
+  height: 96px;
+  width: 96px;
+  background: #e12c2c;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.header .pause-btn-bar {
+  height: 50px;
+  width: 16px;
+  background: #ffffff;
+  display: inline-block;
+  margin: 0 5px;
 }
 /*# sourceMappingURL=style.css.map */
