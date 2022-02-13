@@ -1,6 +1,18 @@
 # No Context Mark Normand!
 
-- Project description (including where the soundbites come from - link to Mark's special)
+Since discovering him in 2018, [Mark Normand](https://twitter.com/marknorm?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor) has quickly become one of my favourite comics. Having watched his special - [Out to Lunch](https://www.youtube.com/watch?v=tDolNU89SXI&ab_channel=marknormand) - and many of his podcast appearances, it still surprises me that Mark doesn't enjoy more acclaim. After all, how many comedians have been praised by George Carlin for having 'a real talent for jackin' around'?
+
+I wanted to create a project that would help spread the Normand love - but what could I do that would be original and interesting? That is when it hit me.
+
+I could take a comedian's words out of context.
+
+This give birth to 'No Context Mark Normand' - a place to hear those quick zingers at the touch of a button.
+
+Most of the soundbites used in this project are taken from Mark's special _Out to Lunch_, with the exception of two being taken from Mark's appearance on episode #1420 of _The Joe Rogan Experience_
+
+All that's left to say is:
+
+COMEDY!
 
 ## Features
 
@@ -9,6 +21,8 @@
 #### Head wobble animation
 
 ### Features to be implemented
+
+#### Other comedians
 
 ## Technologies used
 
