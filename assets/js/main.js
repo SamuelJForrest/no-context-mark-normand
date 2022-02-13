@@ -3,6 +3,10 @@ const button = document.querySelector('.button');
 const audio = document.querySelectorAll('audio');
 
 // functions
+
+/**
+ * Determines which audio clip should be used, plays it, and sets the animation duration
+ */
 const speak = function () {
   // generate random number - based on length of audio object
   let randomNumber = Math.floor(Math.random() * `${audio.length}`);
@@ -23,16 +27,23 @@ const speak = function () {
   });
 };
 
+/**
+ * Removes the click event to the Mark button, and the keypress event (for the space bar) to the document**/
 const removeEvents = function () {
   button.removeEventListener('click', speak);
   document.removeEventListener('keypress', checkKeyCode);
 };
 
+/**
+ * Adds the click event to the Mark button, and the keypress event (for the space bar) to the document**/
 const addEvents = function () {
   button.addEventListener('click', speak);
   document.addEventListener('keypress', checkKeyCode);
 };
 
+/**
+ * Checks if the key code of the event target is the same as the space bar's key code (32)
+ **/
 const checkKeyCode = function (e) {
   if ((e.keycode = 32)) {
     speak();
