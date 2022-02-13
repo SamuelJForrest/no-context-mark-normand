@@ -31,7 +31,7 @@ const audio = {
   26: 'you_cant_leave_you_fucked_me.wav',
 };
 
-// function
+// functions
 const speak = function () {
   // generate random number - based on length of audio object
   let randomNumber =
@@ -43,11 +43,13 @@ const speak = function () {
   button.removeEventListener('click', speak);
   document.removeEventListener('keypress', checkKeyCode);
   audioClip.play();
+  button.classList.add('__wobble');
 
   // 2. When the audio file ends, the event listeners are returned to the button/spacebar
   audioClip.addEventListener('ended', function () {
     button.addEventListener('click', speak);
     document.addEventListener('keypress', checkKeyCode);
+    button.classList.remove('__wobble');
   });
 };
 
