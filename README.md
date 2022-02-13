@@ -8,9 +8,9 @@ I could take a comedian's words out of context.
 
 This give birth to 'No Context Mark Normand' - a place to hear those quick zingers at the touch of a button.
 
-Most of the soundbites used in this project are taken from Mark's special _Out to Lunch_, with the exception of two being taken from Mark's appearance on episode #1420 of _The Joe Rogan Experience_
+Most of the soundbites used in this project are taken from Mark's special _Out to Lunch_, with the exception of two being taken from Mark's appearance on episode #1420 of _The Joe Rogan Experience_.
 
-All that's left to say is:
+With the introductions done, all that's left to say is:
 
 COMEDY!
 
