@@ -12,7 +12,7 @@ Most of the soundbites used in this project are taken from Mark's special _Out t
 
 With the introductions done, all that's left to say is:
 
-COMEDY!
+**COMEDY!**
 
 ## Features
 
