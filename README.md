@@ -39,3 +39,12 @@
 - Within the 'speak' function, that plays the audio clip, I added logic that [removes the event listener](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/removeEventListener) from both the Mark button and space bar before the audio clip plays. This removes the user's ability to activate the 'speak' function while an audio clip is playing. Then, I used the ['ended' event listener](https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/ended_event) to add the event listeners back to the Mark button and space bar, only once the audio clip had ended.
 
 #### #2: Syncing up audio and animations
+
+**Bug**
+
+- When trying to set the duration of the 'head wobble' animation, the current audio's duration kept returning as NaN.
+
+**Fix**
+
+- I discovered that the duration kept returning as NaN because the audio's source was not preloaded. I tried to output the duration as a number using the [onloadedmetadata event](https://www.w3schools.com/jsref/event_onloadedmetadata.asp), but to no avail. Eventually, I decided that I would have to add an `<audio>` tag in for each audio clip (despite oringally not wanting to do this, to save cluttering my HTML file). This allowed me to set the duration of the animation to the same duration as the audio.
+- **Note:** After getting the audio's duration to output as a number, the animation was still not moving. This is because I had not added an 's' to the end of the value to define its value in second. I did this using the following template string: `` button.style.animationDuration = `${audioClip.duration}s`; ``

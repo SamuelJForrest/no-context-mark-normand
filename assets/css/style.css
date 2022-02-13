@@ -90,8 +90,8 @@
             transform: rotate(-5deg);
   }
   100% {
-    -webkit-transform: rotate(5deg);
-            transform: rotate(5deg);
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
   }
 }
 
@@ -117,14 +117,14 @@
             transform: rotate(-5deg);
   }
   100% {
-    -webkit-transform: rotate(5deg);
-            transform: rotate(5deg);
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
   }
 }
 
 .__wobble {
-  -webkit-animation: headWobble 2s forwards;
-          animation: headWobble 2s forwards;
+  -webkit-animation: headWobble forwards;
+          animation: headWobble forwards;
 }
 
 * {

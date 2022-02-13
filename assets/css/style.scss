@@ -1,6 +1,6 @@
 //import partials
-@import "modules/config";
-@import "modules/animations";
+@import 'modules/config';
+@import 'modules/animations';
 
 * {
   padding: 0;
@@ -98,7 +98,6 @@ body {
   width: 75%;
   max-width: 400px;
   min-width: 220px;
-  // animation: fadeIn 2s forwards;
 
   @media (min-width: $sm) {
     width: 60%;
