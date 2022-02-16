@@ -1,6 +1,7 @@
 # No Context Mark Normand!
 
 ![No Context Mark Normand](docs/screenshots/main-page-screenshot.png)
+![No Context Mark Normand](assets/imgs/mark-head.svg)
 
 Since discovering him in 2018, [Mark Normand](https://twitter.com/marknorm?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor) has quickly become one of my favourite comics. Having watched his special - [Out to Lunch](https://www.youtube.com/watch?v=tDolNU89SXI&ab_channel=marknormand) - and many of his podcast appearances, it still surprises me that Mark doesn't enjoy more acclaim. After all, how many comedians have been praised by George Carlin for having 'a real talent for jackin' around'?
 
@@ -26,6 +27,8 @@ With the introductions done, all that's left to say is:
 
 #### Other comedians
 
+- Using this project as a template, it would be fairly simple to replace the head image, audio files, and title to create "No Context" page for any other comedian -
+
 #### Secret Kevin Hart transition
 
 ## Technologies used
@@ -46,7 +49,7 @@ With the introductions done, all that's left to say is:
 
 ## Bugs
 
-#### #1: More than one audio file playing at a time
+### #1: More than one audio file playing at a time
 
 **Bug**
 
@@ -56,7 +59,7 @@ With the introductions done, all that's left to say is:
 
 - Within the 'speak' function, that plays the audio clip, I added logic that [removes the event listener](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/removeEventListener) from both the Mark button and space bar before the audio clip plays. This removes the user's ability to activate the 'speak' function while an audio clip is playing. Then, I used the ['ended' event listener](https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/ended_event) to add the event listeners back to the Mark button and space bar, only once the audio clip had ended.
 
-#### #2: Syncing up audio and animations
+### #2: Syncing up audio and animations
 
 **Bug**
 
