@@ -1,7 +1,6 @@
 # No Context Mark Normand!
 
 ![No Context Mark Normand](docs/screenshots/main-page-screenshot.png)
-![No Context Mark Normand](assets/imgs/mark-head.svg)
 
 Since discovering him in 2018, [Mark Normand](https://twitter.com/marknorm?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor) has quickly become one of my favourite comics. Having watched his special - [Out to Lunch](https://www.youtube.com/watch?v=tDolNU89SXI&ab_channel=marknormand) - and many of his podcast appearances, it still surprises me that Mark doesn't enjoy more acclaim. After all, how many comedians have been praised by George Carlin for having 'a real talent for jackin' around'?
 
@@ -23,13 +22,30 @@ With the introductions done, all that's left to say is:
 
 #### Head wobble animation
 
+- When an audio clip is played, a "head wobble" animation activates for the duration of the sound bite. Retrieving the audio clips' durations was initially quite difficult - see _"Bugs"_ below.
+
 ### Features to be implemented
 
 #### Other comedians
 
-- Using this project as a template, it would be fairly simple to replace the head image, audio files, and title to create "No Context" page for any other comedian -
+- To use this project as a template to create a "No Context" soundboard for other comedians - some potential candidates being:
+  - James Acaster
+  - Theo Von
+  - Dave Chappelle
+  - Ricky Gervais
+  - Bo Burnham
 
 #### Secret Kevin Hart transition
+
+- To add in a sound bite of Mark Normand's "I'm Kevin Hart" sign off - and implemenet logic to change the head image to Kevin Hart while that particular soundbite plays.
+
+#### Safe for work version
+
+- To add a button/toggle to the page that, when activated, stops any potentially offensive sound bites from playing. Although, I am afraid that if it is ever switched on, there will only be one sound bite left.
+
+#### Sound bite selection
+
+- To add a menu, either on screen or as one that enters the screen when toggled, that has a button for each sound bite - allowing the user to listen to all the sound bites.
 
 ## Technologies used
 
@@ -69,3 +85,8 @@ With the introductions done, all that's left to say is:
 
 - I discovered that the duration kept returning as NaN because the audio's source was not preloaded. I tried to output the duration as a number using the [onloadedmetadata event](https://www.w3schools.com/jsref/event_onloadedmetadata.asp), but to no avail. Eventually, I decided that I would have to add an `<audio>` tag in for each audio clip (despite oringally not wanting to do this, to save cluttering my HTML file). This allowed me to set the duration of the animation to the same duration as the audio.
 - **Note:** After getting the audio's duration to output as a number, the animation was still not moving. This is because I had not added an 's' to the end of the value to define its value in second. I did this using the following template string: `` button.style.animationDuration = `${audioClip.duration}s`; ``
+
+## Credits
+
+- I would like to thank [W3 Schools](https://www.w3schools.com/jsref/prop_audio_duration.asp), and the ["Web Dev"](https://www.youtube.com/watch?v=E-v4SSCG6i4&ab_channel=WebDev) for providing the solution to retrieving the audio clips' durations.
+- I would like to thank Mark Normand for the inspiration for this project.
