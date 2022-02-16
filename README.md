@@ -1,5 +1,7 @@
 # No Context Mark Normand!
 
+![No Context Mark Normand](docs/screenshots/main-page-screenshot.png)
+
 Since discovering him in 2018, [Mark Normand](https://twitter.com/marknorm?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor) has quickly become one of my favourite comics. Having watched his special - [Out to Lunch](https://www.youtube.com/watch?v=tDolNU89SXI&ab_channel=marknormand) - and many of his podcast appearances, it still surprises me that Mark doesn't enjoy more acclaim. After all, how many comedians have been praised by George Carlin for having 'a real talent for jackin' around'?
 
 I wanted to create a project that would help spread the Normand love - but what could I do that would be original and interesting? That is when it hit me.
@@ -23,6 +25,8 @@ With the introductions done, all that's left to say is:
 ### Features to be implemented
 
 #### Other comedians
+
+#### Secret Kevin Hart transition
 
 ## Technologies used
 
