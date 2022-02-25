@@ -278,6 +278,10 @@ body {
 }
 
 .button-container {
+  height: calc(100vh - 188px);
+}
+
+.button-container-wrap {
   position: absolute;
   top: 50%;
   left: 50%;
