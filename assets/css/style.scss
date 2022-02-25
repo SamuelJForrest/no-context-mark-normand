@@ -79,7 +79,7 @@ body {
         animation: dropIn 0.7s forwards;
 
         @media (max-width: $sm) {
-          font-size: 3rem;
+          font-size: 4.5rem;
           left: 3px;
           bottom: -11px;
         }
@@ -87,7 +87,7 @@ body {
     }
 
     @media (max-width: $sm) {
-      font-size: 3rem;
+      font-size: 4.5rem;
       position: relative;
       top: 3px;
     }
@@ -127,6 +127,15 @@ body {
     font-weight: 100;
     margin-top: 25px;
     animation: fadeIn 2s forwards;
+  }
+
+  &-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    text-align: center;
   }
 }
 
